@@ -18,6 +18,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'grape'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
+
 
 group :development, :test do
   gem 'byebug'
