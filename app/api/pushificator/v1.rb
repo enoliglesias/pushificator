@@ -40,9 +40,9 @@ module Pushificator
 
       def current_user
         # Find token. Check if valid.
-        token = ::ApiKey.where(access_token: params[:token]).first
-        if token && !token.expired?
-          @current_user = ::User.find(token.user_id)
+        apikey = ::ApiKey.where(access_token: params[:token]).first
+        if apikey && !apikey.expired? && apikey.active
+          @current_user = ::User.find(apikey.user_id)
         else
           false
         end
