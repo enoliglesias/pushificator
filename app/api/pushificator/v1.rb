@@ -12,6 +12,7 @@ module Pushificator
     end
 
     helpers do
+
       def api_response response
        case response
        when Integer
@@ -34,6 +35,17 @@ module Pushificator
       def clean_params(params)
        ActionController::Parameters.new(params)
       end
+
+      def current_user
+        # Find token. Check if valid.
+        token = ::ApiKey.where(access_token: params[:token]).first
+        if token && !token.expired?
+          @current_user = ::User.find(token.user_id)
+        else
+          false
+        end
+      end
+
 
     end
 
