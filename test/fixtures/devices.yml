@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+es:
+  uuid: UUID
+  model: Modelo
+  manufacturer: Fabricante
+  platform: Plataforma
+  version: Versión
+
+en:
+  uuid: UUID
+  model: Model
+  manufacturer: Manufacturer
+  platform: Platform
+  version: Version
