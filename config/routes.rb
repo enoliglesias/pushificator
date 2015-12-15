@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   root to: "rails_admin/main#dashboard"
 
+  mount Pushificator::V1 => '/'
   mount GrapeSwaggerRails::Engine, at: "/documentation"
 
 end
