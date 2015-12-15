@@ -46,9 +46,17 @@ module Pushificator
         end
       end
 
-
     end
 
     mount Device
+
+    add_swagger_documentation(
+      api_version: "v1",
+      hide_documentation_path: true,
+      hide_format: true,
+      markdown: GrapeSwagger::Markdown::RedcarpetAdapter
+                .new(render_options: { highlighter: :rouge })
+    )
+
   end
 end
