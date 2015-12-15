@@ -1,3 +1,5 @@
+require 'grape-swagger'
+
 module Pushificator
   class V1 < Grape::API
     version 'v1', using: :path, vendor: 'pushificator'
