@@ -11,6 +11,7 @@ module Pushificator
     before do
       header['Access-Control-Allow-Origin'] = '*'
       header['Access-Control-Request-Method'] = '*'
+      header['Access-Control-Allow-Headers'] = 'Access-Control-Allow-Origin, Access-Control-Allow-Headers, Access-Control-Request-Method'
     end
 
     helpers do
