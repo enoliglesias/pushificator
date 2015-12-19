@@ -24,6 +24,8 @@ gem 'rack-contrib'
 gem 'redcarpet'
 gem 'rouge'
 
+gem 'pushmeup'
+
 group :development, :test do
   gem 'byebug'
 end

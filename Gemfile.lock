@@ -97,6 +97,9 @@ GEM
     haml (4.0.7)
       tilt
     hashie (3.4.3)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     ice_nine (0.11.1)
     jbuilder (2.3.2)
@@ -126,6 +129,9 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    pushmeup (0.3.0)
+      httparty
+      json
     rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -240,6 +246,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  pushmeup
   rack-contrib
   rails (= 4.2.5)
   rails_admin
