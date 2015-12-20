@@ -51,7 +51,8 @@ module Pushificator
           .permit(:uuid, :model, :manufacturer, :platform, :version)
 
           if safe_params
-            ::Device.create!(safe_params)
+            device = ::Device.where(uuid: safe_params[:uuid]).first_or_initialize
+            device.update_attributes(safe_params)
             status 200 # Saved OK
           end
         rescue ActiveRecord::RecordNotFound => e
