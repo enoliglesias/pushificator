@@ -11,6 +11,22 @@ RailsAdmin.config do |config|
   ## == Cancan ==
    config.authorize_with :cancan
 
+   config.model 'User' do
+     navigation_icon 'icon-user'
+   end
+
+   config.model 'Device' do
+     navigation_icon 'icon-hdd'
+   end
+
+   config.model 'Notification' do
+     navigation_icon 'icon-bell'
+   end
+
+   config.model 'ApiKey' do
+     navigation_icon 'icon-cog'
+   end
+
   ## == Pundit ==
   # config.authorize_with :pundit
 
