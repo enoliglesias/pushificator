@@ -30,7 +30,7 @@ module Pushificator
         This is a hash, with the estruture:
 
         ```
-        {"uiid": "JfFkLJf83fuUH3uhue3", "model": "Nexus 5", "manufacturer": "LG", "platform": "Android", "version": "6.0"}
+        {"uiid": "JfFkLJf83fuUH3uhue3", "token", "qwerqwerfadsfasd", model": "Nexus 5", "manufacturer": "LG", "platform": "Android", "version": "6.0"}
         ```
         NOTE
       end
@@ -42,6 +42,7 @@ module Pushificator
           requires :manufacturer, type: String, desc: 'device manufacturer'
           requires :platform, type: String, desc: 'device platform'
           requires :version, type: String, desc: 'device version'
+          requires :token, type: String, desc: 'device registration token'
         end
       end
       post do
