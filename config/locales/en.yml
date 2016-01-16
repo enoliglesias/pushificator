@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  admin:
+    actions:
+      send:
+        menu: Send notification
+        breadcrumb: Send notification
+        title: Send notification
