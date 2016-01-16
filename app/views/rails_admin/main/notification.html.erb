@@ -1,0 +1,6 @@
+<p><b>Notification info</b></p>
+<p><b>Title:</b> <%= @object.title %></p>
+<p><b>Message:</b> <%= @object.message %></p>
+
+<p><%= link_to "Send to Android", "#", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to "Send to iOS", "#", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
