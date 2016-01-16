@@ -38,5 +38,12 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+
+    member :notification do
+      i18n_key :send
+      register_instance_option :link_icon do
+        'fa fa-send'
+      end
+    end
   end
 end
