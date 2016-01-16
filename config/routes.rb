@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   devise_for :user
 
@@ -9,4 +8,5 @@ Rails.application.routes.draw do
   mount Pushificator::V1 => '/'
   mount GrapeSwaggerRails::Engine, at: "/documentation"
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 end
