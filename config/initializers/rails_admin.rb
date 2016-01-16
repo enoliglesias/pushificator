@@ -16,7 +16,7 @@ RailsAdmin.config do |config|
    end
 
    config.model 'Device' do
-     navigation_icon 'icon-hdd'
+     navigation_icon 'fa fa-phone'
    end
 
    config.model 'Notification' do
