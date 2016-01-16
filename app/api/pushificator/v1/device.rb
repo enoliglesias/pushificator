@@ -30,7 +30,7 @@ module Pushificator
         This is a hash, with the estruture:
 
         ```
-        {"uiid": "JfFkLJf83fuUH3uhue3", "token", "qwerqwerfadsfasd", model": "Nexus 5", "manufacturer": "LG", "platform": "Android", "version": "6.0"}
+        {"uiid": "JfFkLJf83fuUH3uhue3", "token": "qwerqwerfadsfasd", model": "Nexus 5", "manufacturer": "LG", "platform": "Android", "version": "6.0"}
         ```
         NOTE
       end
