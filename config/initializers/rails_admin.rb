@@ -41,13 +41,17 @@ RailsAdmin.config do |config|
     show
     edit
     delete
-    show_in_app
 
     member :notification do
       i18n_key :send
       register_instance_option :link_icon do
         'fa fa-send'
       end
+
+      visible do
+        bindings[:abstract_model].model.to_s == "Notification"
+      end
+
     end
   end
 end
