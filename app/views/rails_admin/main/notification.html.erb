@@ -2,5 +2,5 @@
 <p><b>Title:</b> <%= @object.title %></p>
 <p><b>Message:</b> <%= @object.message %></p>
 
-<p><%= link_to "Send to Android", "#", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
-<p><%= link_to "Send to iOS", "#", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to "Send to Android", "/notifications/#{@object.id}/send", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to "Send to iOS", "/notifications/#{@object.id}/send", class: "btn btn-success", data: { confirm: "Are you sure?" } %></p>
