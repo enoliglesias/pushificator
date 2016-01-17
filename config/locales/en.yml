@@ -21,6 +21,8 @@
 
 en:
   hello: "Hello world"
+  notification_sending_ok: Notification sended successfully
+  notification_sending_ko: Error on sending notification
   admin:
     actions:
       send:
