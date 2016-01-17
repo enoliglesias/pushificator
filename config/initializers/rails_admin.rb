@@ -23,6 +23,10 @@ RailsAdmin.config do |config|
      navigation_icon 'icon-bell'
    end
 
+   config.model 'Sending' do
+     navigation_icon 'fa fa-send'
+   end
+
    config.model 'ApiKey' do
      navigation_icon 'icon-cog'
    end
